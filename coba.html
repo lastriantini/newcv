@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lala's CV</title>
+
+    <!-- Hubungkan Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Optional: Hubungkan jQuery dan Popper.js (diperlukan untuk beberapa fitur Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+
+    <!-- Hubungkan Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/jomolhari-3');
+        @import url('https://fonts.cdnfonts.com/css/gloock-2');
+        @import url('https://fonts.cdnfonts.com/css/bacasime-antique');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #F5E8C7 !important;
+        }
+
+        .navbar {
+            background-color: transparent !important;
+            font-family: 'Jomolhari', sans-serif;
+            margin-left: 35px;
+            margin-right: 40px;
+        }
+
+        .nav-item {
+            margin: 0 20px !important;
+        }
+
+        .nav-item h5 {
+            font-family: 'Gloock', sans-serif;
+        }
+
+        .navbarct {
+            border-bottom: solid 1px black !important;
+        }
+
+        .navbar-nav {
+            display: flex;
+            width: 100%;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0;
+        }
+
+        /* DASHBOARD */
+        .dashRight {
+            font-size: 60px !important;
+            font-family: 'Gloock', sans-serif;
+            padding: 160px 0 200px 100px !important;
+            /* Menggunakan tanda titik koma (;) sebagai pemisah */
+        }
+
+        .dashRight p {
+            border-bottom: 1.5px solid black;
+        }
+
+        .dashLeft img {
+            border-radius: 200px;
+            width: 240px;
+            height: 240px;
+            margin: -425px 160px 0 0 !important;
+        }
+
+        /* IMG 1 */
+        .parallax {
+            /* The image used */
+            /* background-image: url("princess.jpg"); */
+            /* Set a specific height */
+            min-height: 600px;
+            width: 102.5%;
+            margin-left: -15px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .text {
+            font-family: 'Gloock', sans-serif;
+            font-size: 40px;
+            color: white;
+            padding: 220px 200px 100px 200px;
+            text-align: center;
+        }
+
+        /* ABOUT ME */
+        .amRight {
+            width: 700px;
+            font-size: 20px !important;
+            font-family: 'Jomolhari', sans-serif;
+            padding: 50px 7px 30px 30px;
+            margin: 200px 0 150px 80px !important;
+            /* Menggunakan tanda titik koma (;) sebagai pemisah */
+        }
+
+        .amLeft img {
+            border-radius: 200px;
+            width: 240px;
+            height: 240px;
+            margin: -460px 100px 0 0 !important;
+        }
+
+        .card1 {
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: transparent;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid navbarct">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-start mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">ABOUT ME</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex justify-content-center">
+                    <li class="nav-item">
+                        <h5 class="mt-3">WELCOME</h5>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex justify-content-end ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portofolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid dashboard">
+        <div class="dashRight d-flex justify-content-start mr-auto">
+            <p>Welcome to <br> Lastriantini's CV</p>
+        </div>
+        <div class="dashLeft d-flex justify-content-end ml-auto">
+            <img src="gue.png" alt="foto saya">
+        </div>
+    </div>
+
+    <div class="container-fluid quote">
+        <div class="parallax" style="background-image: url('princess.jpg');">
+            <div class="text justify-content-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum vel provident rem quidem ratione
+                    delenit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid about-me" id="about-me">
+        <div class="amRight d-flex justify-content-start mr-auto">
+            <div class="card1" style="text-align: center;">
+                <h5 style="padding-bottom: 10px; border-bottom: 0.6px solid black;"><b>About Me</b></h5>
+                <p style="padding-top: 10px;">Halo! i'm Lastriantini, Now, i'm study at SMK WIKRAMA BOGOR in software
+                    major (PPLG).<br>I like to learn and create with program. </p>
+            </div>
+        </div>
+        <div class="amLeft d-flex justify-content-end ml-auto">
+            <img src="gue.png" alt="">
+        </div>
+    </div>
+
+    <div class="container-fluid quote">
+        <div class="parallax" style="background-image: url('princess.jpg');">
+            <div class="text justify-content-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum vel provident rem quidem ratione
+                    delenit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="portofolio" style="margin: 200px 0 200px 0;">
+        <div class="row" style="justify-content: space-around;">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="Screenshot 2023-12-11 142035.png" class="card-img-top" alt="sertifikay java dicoding">
+                    <div class="card-body">
+                        <h5 class="card-title">java sertifikat dicoding</h5>
+                        <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="Screenshot 2023-12-11 142035.png" class="card-img-top" alt="sertifikay java dicoding">
+                    <div class="card-body">
+                        <h5 class="card-title">website apotek</h5>
+                        <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="Screenshot 2023-12-11 142035.png" class="card-img-top" alt="sertifikay java dicoding">
+                    <div class="card-body">
+                        <h5 class="card-title">website peminjaman</h5>
+                        <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- <div class="container-fluid quote">
+        <div class="parallax" style="background-image: url('princess.jpg');">
+            <div class="text justify-content-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum vel provident rem quidem ratione
+                    delenit.</p>
+            </div>
+        </div>
+    </div> -->
+
+    <footer class="footer bg-dark text-white" id="contact us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="margin: 50px 0 20px 0;">
+                    <h5>Contact</h5>
+                    <a href="#" class="text-white">email : lastriantini@smkwikrama.sch.id</a><br>
+                    <a href="https://www.linkedin.com/in/lastri-antini-98902924a/" class="text-white">linkedin : lastri antini</a><br>
+                    <a href="https://github.com/lastriantini" class="text-white">github : lastriantini</a>
+                    <a href="https://www.instagram.com/lala_.last/" class="text-white">instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
